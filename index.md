@@ -1,1 +1,6 @@
-# danreuben.github.io
+---
+title: danreuben.github.io
+layout: base.njk
+---
+
+# {{ title }}
