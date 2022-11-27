@@ -1,0 +1,5 @@
+[x] - configure build process
+[x] - deploy to gh-pages
+[x] - build basic navigation
+[ ] - fix post list order
+[ ] - test concrete/normalize css
