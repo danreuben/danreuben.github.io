@@ -1,17 +1,16 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);  
+  eleventyConfig.addPassthroughCopy("_src/css");
+  eleventyConfig.addPassthroughCopy("_src/img");
+  eleventyConfig.addPassthroughCopy("_src/js");
+  eleventyConfig.addPassthroughCopy('_src/robots.txt');    
 
-    eleventyConfig.addPassthroughCopy("css");
-    eleventyConfig.addPassthroughCopy("img");
-    eleventyConfig.addPassthroughCopy("js");
-    eleventyConfig.addPassthroughCopy({'_src/robots.txt': '/robots.txt' });
-    eleventyConfig.addPlugin(eleventyNavigationPlugin);
-
-    return {
-        dir: {
-          input: '_src',
-          output: '_site'
-        }
-      };
+  return {
+      dir: {
+        input: '_src',
+        output: '_site'
+      }
+    };
 };
