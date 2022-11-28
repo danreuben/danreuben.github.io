@@ -1,0 +1,10 @@
+<header>
+    <h1><a href="{{ '/' | url }}"><img src="/img/danreuben.png" alt="danreuben" /></a></h1>
+
+    {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+    <div>
+    {%- for entry in collections.all | eleventyNavigation %}
+        <a href="{{ entry.url | url }}"><button{% if entry.url == page.url %} button disabled{% endif %}>{{ entry.title }}</button></a>
+    {%- endfor %}
+    </div>
+</header>

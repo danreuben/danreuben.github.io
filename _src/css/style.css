@@ -1,39 +1,35 @@
+
 header {
 	padding: 3rem 0;
-	border-bottom: 1px dashed;
 }
-header:after {
-	content: "";
-	display: table;
-	clear: both;
+.badge {
+	height: 3.5rem;
+	border: .2rem solid #111;
 }
-
-/* Header */
-.home {
-	padding: 0 1rem;
-	float: left;
-	margin: 1rem 0; /* 16px /16 */
-	font-size: 1em; /* 16px /16 */
+figure.highlight {
+	margin-left: 0;
+	margin-right: 0;
 }
-.home :link:not(:hover) {
-	text-decoration: none;
-}
-
-/* Nav */
-/* .nav {
+.row {
+	display: flex;
+	flex-direction: column;
 	padding: 0;
-	list-style: none;
-	float: left;
-	margin-left: 1em;
-} */
-.nav-item {
-	display: inline-block;
-	margin-right: 1em;
 }
-.nav-item a[href]:not(:hover) {
-	text-decoration: none;
+.row .column {
+	display: block;
+	flex: 1 1 auto;
+	margin-left: 0;
+	max-width: 100%;
+	width: 100%;
 }
-.nav-item-active {
-	font-weight: 700;
-	text-decoration: underline;
+@media (min-width: 40.0rem) {
+	.row {
+	flex-direction: row;
+	margin: 0 -1rem;
+	width: calc(100% + 2rem);
+	}
+	.row .column {
+	margin-bottom: inherit;
+	padding: 0 1.0rem;
+	}
 }

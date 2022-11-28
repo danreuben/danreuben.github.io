@@ -1,6 +1,9 @@
 ---
-title: third
-tags: general
+title: third article
+author: danreuben
+date: 2022-01-03
+description: Velit nulla deserunt velit aute occaecat sit occaecat aute elit. Qui sunt sit elit laborum et adipisicing sint amet laboris ut velit dolore. Id commodo nostrud duis veniam laborum sit.
+tags: 
 ---
 
 # {{ title }}

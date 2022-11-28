@@ -1,0 +1,17 @@
+---
+title: danreuben
+layout: base
+eleventyNavigation:
+  key: home
+  order: 1
+---
+
+<section>
+  <h2>about</h2>
+  <p>
+    Consequat duis consequat mollit nisi incididunt excepteur ad consectetur dolor. Culpa nostrud non aliquip eiusmod adipisicing proident id veniam proident sit tempor. Fugiat nisi ut laboris in ad.
+  </p>
+</section>
+{%- for post in collections.featured %}
+  {% include 'snippet.njk' %}
+{%- endfor %}

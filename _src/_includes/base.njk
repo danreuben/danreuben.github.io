@@ -12,18 +12,10 @@
     <link rel="icon" href="{{ site.favicon }}"
   </head>
   <body>
-    <header>
-      <h1 class="home"><a href="{{ '/' | url }}">{{ site.name }}</a></h1>
-
-      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      <div class="nav">
-      {%- for entry in collections.all | eleventyNavigation %}
-        <button class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></button>
-      {%- endfor %}
-      </div>
-    </header>
-    
-    {{ content | safe }}
-  
+    <main>
+      {% include 'header.njk'  %}
+        {{ content | safe }}
+      {% include 'footer.njk' %}
+     </main> 
   </body>
 </html>

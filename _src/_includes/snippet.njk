@@ -1,0 +1,8 @@
+<section>
+  <article>
+    <h3>{{ post.data.title }}</h3>
+    <p>by <span>{{post.data.author}}</span> on <span>{{ post.date | postDate }}</span></p>
+    <p>{{post.data.description}}</p> 
+    <a href="{{ post.url }}"><button>Continue Reading</button></a>
+  </article> 
+</section>

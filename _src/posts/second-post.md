@@ -1,6 +1,9 @@
 ---
-title: second
-tags: general
+title: second article
+author: danreuben
+date: 2022-01-02
+description: Quis ut ea minim sint amet nulla. Ut aute proident dolore anim. Minim ex magna eiusmod culpa cupidatat ut incididunt velit nulla. Occaecat adipisicing minim dolor fugiat dolor incididunt et enim cillum sint Lorem. Ad in anim ex consequat aliqua pariatur.
+tags: 
 ---
 
 # {{ title }}

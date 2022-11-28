@@ -2,4 +2,5 @@
 [x] - deploy to gh-pages
 [x] - build basic navigation
 [ ] - fix post list order
-[ ] - test concrete/normalize css
+        + dates are off by one
+[x] - add concrete/normalize css
